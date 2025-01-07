@@ -1,14 +1,12 @@
 body {
-  background: #f9f7fe;
+  background: linear-gradient(rgb(106, 106, 210), rgb(118, 196, 255));
   font-family: "Roboto", sans-serif;
 }
 
 a {
   color: #885df1;
 }
-
 .weather-app {
-  background: white;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
@@ -21,21 +19,21 @@ header {
   padding-bottom: 30px;
 }
 
-.search-input {
-  background-color: #f9f7fe;
+.search-form-input {
+  background-color: rgb(0 0 0 / 0.1);
+  color: #fff;
   border: none;
-  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   padding: 20px;
   width: 75%;
   border-radius: 6px;
 }
 
-.search-button {
+.search-form-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #885df1;
-  color: white;
+  background-color: rgb(0 0 0 / 0.1);
+  color: #fff;
   border: none;
   padding: 20px;
   line-height: 1;
@@ -46,20 +44,26 @@ main {
   padding: 30px 0;
 }
 
-.current-temperature {
+.temperature {
   font-size: 48px;
 }
 
-.current-weather {
+.weather-forecast {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: rgb(0 0 0 / 0.1);
 }
 
-.current-city {
+.weather-app-data {
+}
+
+.city {
   font-size: 38px;
   font-weight: 900;
   margin: 0;
 }
+
 .current-details {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
@@ -71,22 +75,31 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+.temperature-container {
+  display: flex;
+  margin-top: 30px;
 }
 
-.current-temperature-value {
+.temperature-value {
   font-size: 80px;
   font-weight: bold;
+  line-height: 88px;
 }
 
-.current-temperature-unit {
+.temperature-unit {
+  margin-top: 6px;
   font-size: 28px;
-  position: relative;
-  top: -38px;
+}
+
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.temperature-container,
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -96,3 +109,4 @@ footer {
 
   color: rgba(39, 33, 66, 0.4);
 }
+
