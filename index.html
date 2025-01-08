@@ -21,29 +21,33 @@
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-input"
-            id="search-input"
+            class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="current-weather">
+        <div class="weather-app-data">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
+            <h1 id="city">Durban</h1>
             <p class="current-details">
-              <span id="current-date"></span>Tuesday 18:58, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="time">18:46</span>,<span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:<strong
+                id="wind-speed"
+              ></strong>
             </p>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
+          <div class="temperature-container">
+            <div id="icon" class="weather-app-icon"></div>
+            <div class="temperature-value" id="temperature">25</div>
+            <div class="temperature-unit">°C</div>
           </div>
         </div>
-         <div class="weather-forecast" id="forecast">
+        <div class="weather-forecast" id="forecast">
+         
+       
       </main>
       <footer>
         <p>
@@ -59,9 +63,7 @@
             on GitHub</a
           >
           and
-          <a
-            href="https://cozy-cucurucho-291033.netlify.app/"
-            target="_blank"
+          <a href="https://cozy-cucurucho-291033.netlify.app/" target="_blank"
             >hosted on Netlify</a
           >
         </p>
