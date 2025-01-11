@@ -1,3 +1,4 @@
+
 body {
   background-image: url("https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MjAzMTg3NTAwMTI5MTk5Njgz/cloud-types-with-pictures.webp");
   font-family: "Roboto", sans-serif;
@@ -5,6 +6,7 @@ body {
 img {
  position: absolute;
  width: 100%;
+ background-repeat: no-repeat;
 }
 a {
   color: #885df1;
